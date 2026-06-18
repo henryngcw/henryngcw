@@ -31,11 +31,12 @@
 
 ![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 
-### Database & Infra
+### Database & Deployment
 
-[![Skill Icons](https://skillicons.dev/icons?i=postgres,redis,docker&theme=dark)](https://skillicons.dev)
+[![Skill Icons](https://skillicons.dev/icons?i=postgres,redis,docker,vercel&theme=dark)](https://skillicons.dev)
 
 ![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
 
 ---
 
