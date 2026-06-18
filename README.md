@@ -27,7 +27,7 @@
 
 ### Backend
 
-[![Skill Icons](https://skillicons.dev/icons?i=nodejs,java,spring,ruby,rails&theme=dark)](https://skillicons.dev)
+[![Skill Icons](https://skillicons.dev/icons?i=nodejs,java,spring&theme=dark)](https://skillicons.dev)
 
 ![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 
