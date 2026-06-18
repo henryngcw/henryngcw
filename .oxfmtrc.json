@@ -1,0 +1,19 @@
+{
+  "semi": false,
+  "trailingComma": "es5",
+  "singleQuote": false,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "ignorePatterns": [
+    "node_modules",
+    ".next",
+    "pnpm-lock.yaml",
+    "public",
+    ".env*",
+    "*.log",
+    "next-env.d.ts"
+  ]
+}

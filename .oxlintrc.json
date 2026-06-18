@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "import", "nextjs"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {
+    "no-console": "warn",
+    "prefer-const": "error",
+    "no-template-curly-in-string": "error",
+    "object-shorthand": "warn",
+    "prefer-template": "warn",
+
+    "import/named": "error",
+    "import/no-self-import": "error",
+    "import/no-duplicates": "error",
+    "import/first": "error",
+    "import/no-empty-named-blocks": "error",
+
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-unnecessary-type-assertion": "warn",
+    "typescript/no-inferrable-types": "warn",
+    "typescript/prefer-for-of": "warn",
+    "typescript/prefer-string-starts-ends-with": "warn",
+    "typescript/prefer-function-type": "warn",
+    "typescript/no-empty-interface": "warn",
+
+    "react/jsx-key": "error",
+    "react/jsx-no-target-blank": "error",
+    "react/no-direct-mutation-state": "error",
+    "react/no-string-refs": "error",
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "warn",
+    "react/self-closing-comp": "warn",
+
+    "nextjs/no-img-element": "error",
+    "nextjs/no-sync-scripts": "error",
+    "nextjs/no-html-link-for-pages": "error"
+  },
+  "ignorePatterns": ["node_modules", ".next", "public", "next-env.d.ts"]
+}
