@@ -39,6 +39,15 @@
 
 ---
 
+## Experience
+
+| Period   | Company                                                                   | Role                      |
+| -------- | ------------------------------------------------------------------------- | ------------------------- |
+| Present  | [Ryt Bank](https://rytbank.my) — Malaysia's first AI-powered digital bank | Senior Front End Engineer |
+| Previous | [MoneyLion](https://moneylion.com) — AI-powered fintech platform          | Software Engineer         |
+
+---
+
 ## Stats
 
 <div align="center">
