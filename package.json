@@ -18,7 +18,9 @@
     "format": "oxfmt --check .",
     "format:fix": "oxfmt .",
     "prepare": "husky",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel"
   },
   "dependencies": {
     "@base-ui/react": "1.6.0",
@@ -44,7 +46,8 @@
     "oxfmt": "0.55.0",
     "oxlint": "1.70.0",
     "tailwindcss": "4.3.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vercel": "^54.14.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
