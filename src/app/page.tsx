@@ -1,65 +1,89 @@
-import Image from "next/image"
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+    <div className="max-w-2xl mx-auto px-6 py-20 space-y-16 animate-in fade-in-0 slide-in-from-bottom-4 duration-700">
+      {/* Hero */}
+      <section className="space-y-4">
+        <h1 className="text-2xl font-semibold tracking-tight">
+          Henry Ng Cheng Way
+        </h1>
+        <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
+          Senior Front End Engineer building products at the intersection of
+          design and engineering. Currently at{" "}
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://rytbank.my"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-foreground underline underline-offset-4 decoration-border hover:decoration-foreground transition-colors"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Ryt Bank
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+          , Malaysia&apos;s first AI-powered digital bank.
+        </p>
+      </section>
+
+      {/* Projects */}
+      <section className="space-y-4">
+        <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          Projects
+        </h2>
+        <ul className="divide-y divide-border/50">
+          <li>
+            <a
+              href="https://canyouaffordyourshit.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between py-3 hover:opacity-80 transition-opacity"
+            >
+              <div className="space-y-0.5">
+                <p className="text-sm font-medium">Can You Afford Your Shit</p>
+                <p className="text-xs text-muted-foreground">
+                  Finance planner · Next.js · TypeScript · Tailwind
+                </p>
+              </div>
+              <span className="text-muted-foreground text-sm group-hover:translate-x-0.5 transition-transform">
+                ↗
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      {/* Career */}
+      <section className="space-y-4">
+        <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          Career
+        </h2>
+        <ul className="space-y-5">
+          <li className="flex gap-8">
+            <span className="text-xs text-muted-foreground w-16 shrink-0 pt-px">
+              Now
+            </span>
+            <div className="space-y-0.5">
+              <p className="text-sm font-medium">Ryt Bank</p>
+              <p className="text-xs text-muted-foreground">
+                Senior Front End Engineer
+              </p>
+            </div>
+          </li>
+          <li className="flex gap-8">
+            <span className="text-xs text-muted-foreground w-16 shrink-0 pt-px">
+              Prev
+            </span>
+            <div className="space-y-0.5">
+              <p className="text-sm font-medium">MoneyLion</p>
+              <p className="text-xs text-muted-foreground">Software Engineer</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      {/* Writing */}
+      <section className="space-y-4">
+        <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          Writing
+        </h2>
+        <p className="text-sm text-muted-foreground">No posts yet.</p>
+      </section>
     </div>
   )
 }
