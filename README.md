@@ -46,14 +46,12 @@
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=henryngcw&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=henryngcw&layout=compact&theme=tokyonight&hide_border=true" />
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=henryngcw&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
 </div>
 
 ---
 
 ## Projects
 
-| Project                  | Stack                           | Link                                                                 |
-| ------------------------ | ------------------------------- | -------------------------------------------------------------------- |
-| Can You Afford Your Shit | Next.js · TypeScript · Tailwind | [canaffordyourshit.vercel.app](https://canaffordyourshit.vercel.app) |
+| Project                  | Stack                           | Link                                                                       |
+| ------------------------ | ------------------------------- | -------------------------------------------------------------------------- |
+| Can You Afford Your Shit | Next.js · TypeScript · Tailwind | [canyouaffordyourshit.vercel.app](https://canyouaffordyourshit.vercel.app) |
