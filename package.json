@@ -14,7 +14,10 @@
     "start:production": "NEXT_PUBLIC_ENV=production next start",
     "compile": "tsgo --noEmit",
     "lint": "oxlint src",
-    "format": "oxfmt .",
+    "lint:fix": "oxlint --fix src",
+    "format": "oxfmt --check .",
+    "format:fix": "oxfmt .",
+    "prepare": "husky",
     "lint-staged": "lint-staged"
   },
   "dependencies": {
@@ -36,6 +39,7 @@
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "@typescript/native-preview": "7.0.0-dev.20260618.1",
+    "husky": "9.1.7",
     "lint-staged": "17.0.7",
     "oxfmt": "0.55.0",
     "oxlint": "1.70.0",
@@ -44,7 +48,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "oxlint",
+      "oxlint --fix",
       "oxfmt"
     ],
     "*.{js,json,css,md}": "oxfmt"
