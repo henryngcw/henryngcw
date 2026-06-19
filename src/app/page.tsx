@@ -84,6 +84,45 @@ export default function Home() {
         </h2>
         <p className="text-sm text-muted-foreground">No posts yet.</p>
       </section>
+
+      {/* Connect */}
+      <section className="space-y-4">
+        <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          Connect
+        </h2>
+        <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <li>
+            <a
+              href="mailto:henryng0023@gmail.com"
+              className="text-muted-foreground underline underline-offset-4 decoration-border hover:text-foreground hover:decoration-foreground transition-colors"
+            >
+              Email
+            </a>
+          </li>
+          <li>
+            {/* ponytail: placeholder handle — confirm/swap */}
+            <a
+              href="https://www.linkedin.com/in/henryngchengway"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground underline underline-offset-4 decoration-border hover:text-foreground hover:decoration-foreground transition-colors"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            {/* ponytail: placeholder handle — confirm/swap */}
+            <a
+              href="https://x.com/henryngchengway"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground underline underline-offset-4 decoration-border hover:text-foreground hover:decoration-foreground transition-colors"
+            >
+              Twitter
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
   )
 }

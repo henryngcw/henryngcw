@@ -37,12 +37,20 @@ export default function RootLayout({
             >
               Henry Ng
             </Link>
-            <Link
-              href="/blog"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Blog
-            </Link>
+            <div className="flex items-center gap-6">
+              <Link
+                href="/portfolio"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Portfolio
+              </Link>
+              <Link
+                href="/blog"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Blog
+              </Link>
+            </div>
           </nav>
         </header>
 
