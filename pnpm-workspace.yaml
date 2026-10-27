@@ -12,4 +12,6 @@ minimumReleaseAgeExclude:
   - "@typescript/native-preview-win32-arm64@7.0.0-dev.20260618.1"
   - "@typescript/native-preview-win32-x64@7.0.0-dev.20260618.1"
   - "@typescript/native-preview@7.0.0-dev.20260618.1"
-  - lucide-react@1.21.0
+  - lucide-react@1.21.0 || 1.62.0
+  - "@shadcn/registry@0.2.1"
+  - shadcn@4.23.0
