@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Portfolio — Henry Ng",
-  description: "Freelance projects and client work.",
+  title: "Projects",
+  description: "Freelance client work and open-source tools.",
 }
 
 // Live star count, revalidated hourly. Falls back to null on any error.
@@ -19,24 +19,28 @@ async function getStars(repo: string): Promise<number | null> {
   }
 }
 
-export default async function Portfolio() {
+export default async function Projects() {
   const stars = await getStars("henryngcw/claude-usage-menubar")
   return (
     <div className="max-w-2xl mx-auto px-6 py-20 space-y-16 animate-in fade-in-0 slide-in-from-bottom-4 duration-700">
       {/* Intro */}
       <section className="space-y-4">
-        <h1 className="text-2xl font-semibold tracking-tight">Portfolio</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">Projects</h1>
         <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
-          Selected freelance and client work.
+          Freelance client work and open-source tools.
         </p>
       </section>
 
-      {/* Projects */}
+      {/* Freelance */}
       <section className="space-y-8">
+        <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          Freelance
+        </h2>
+
         {/* Plus Vibes */}
         <article className="space-y-4">
           <header className="space-y-0.5">
-            <h2 className="text-sm font-medium">Plus Vibes</h2>
+            <h3 className="text-sm font-medium">Plus Vibes</h3>
             <p className="text-xs text-muted-foreground">
               Mental-health counselling platform · Hono.js · React Native ·
               TypeScript
@@ -96,12 +100,19 @@ export default async function Portfolio() {
             mental wellbeing.
           </p>
         </article>
+      </section>
+
+      {/* Open Source & Utilities */}
+      <section className="space-y-8">
+        <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          Open Source &amp; Utilities
+        </h2>
 
         {/* Claude Usage Menu Bar */}
         <article className="space-y-4">
           <header className="flex items-baseline justify-between gap-4">
             <div className="space-y-0.5">
-              <h2 className="text-sm font-medium">Claude Usage Menu Bar</h2>
+              <h3 className="text-sm font-medium">Claude Usage Menu Bar</h3>
               <p className="text-xs text-muted-foreground">
                 macOS menu bar · SwiftBar · Shell
               </p>

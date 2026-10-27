@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+import { SITE_URL } from "@/lib/site"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -14,8 +15,12 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Henry Ng",
+  metadataBase: new URL(SITE_URL),
+  title: { default: "Henry Ng", template: "%s — Henry Ng" },
   description: "Senior Front End Engineer based in Malaysia.",
+  alternates: { types: { "application/rss+xml": "/blog/feed.xml" } },
+  openGraph: { siteName: "Henry Ng", locale: "en_US", type: "website" },
+  twitter: { card: "summary_large_image" },
 }
 
 export default function RootLayout({
@@ -39,10 +44,10 @@ export default function RootLayout({
             </Link>
             <div className="flex items-center gap-6">
               <Link
-                href="/portfolio"
+                href="/projects"
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
-                Portfolio
+                Projects
               </Link>
               <Link
                 href="/blog"

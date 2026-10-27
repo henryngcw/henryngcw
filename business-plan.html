@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Freelance Agency — Business Plan</title>
+    <style>
+      :root {
+        --bg: #0f1117;
+        --card: #181b24;
+        --line: #2a2f3a;
+        --txt: #e6e8ec;
+        --mut: #9aa3b2;
+        --acc: #7c9cff;
+        --good: #4ade80;
+        --warn: #fbbf24;
+        --bad: #f87171;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font:
+          15px/1.6 -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        background: var(--bg);
+        color: var(--txt);
+        padding: 2rem 1rem;
+      }
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.9rem;
+        margin: 0 0 0.25rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 2.5rem 0 0.75rem;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.4rem;
+      }
+      .sub {
+        color: var(--mut);
+        margin: 0 0 1.5rem;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 1.1rem 1.3rem;
+        margin: 0.8rem 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0.5rem 0;
+        font-size: 14px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 0.55rem 0.6rem;
+        border-bottom: 1px solid var(--line);
+      }
+      th {
+        color: var(--mut);
+        font-weight: 600;
+      }
+      .num {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+      .pill {
+        display: inline-block;
+        font-size: 11px;
+        padding: 0.15rem 0.55rem;
+        border-radius: 99px;
+        font-weight: 600;
+      }
+      .p-good {
+        background: rgba(74, 222, 128, 0.15);
+        color: var(--good);
+      }
+      .p-warn {
+        background: rgba(251, 191, 36, 0.15);
+        color: var(--warn);
+      }
+      .p-bad {
+        background: rgba(248, 113, 113, 0.15);
+        color: var(--bad);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 0.8rem;
+      }
+      .big {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--acc);
+      }
+      .good {
+        color: var(--good);
+      }
+      .warn {
+        color: var(--warn);
+      }
+      .bad {
+        color: var(--bad);
+      }
+      ul {
+        margin: 0.4rem 0 0.4rem 1.1rem;
+        padding: 0;
+      }
+      li {
+        margin: 0.2rem 0;
+      }
+      .blocker {
+        border: 1px solid var(--warn);
+        background: rgba(251, 191, 36, 0.08);
+      }
+      .foot {
+        color: var(--mut);
+        font-size: 13px;
+        margin-top: 2.5rem;
+        border-top: 1px solid var(--line);
+        padding-top: 1rem;
+      }
+      .tradeoff td:first-child {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Freelance Agency — Business Plan</h1>
+      <p class="sub">
+        AI-orchestrated dev shop (you + Claude). Malaysia context · MYR · USD→RM
+        4.70 · drafted 2026-06-20.
+      </p>
+
+      <!-- ───────────── EXPENSES ───────────── -->
+      <h2>1. Total expenses (what you fork out)</h2>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>For</th>
+              <th class="num">RM/mo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Claude Max 5x</td>
+              <td>Dev orchestration — the only line that matters</td>
+              <td class="num">470</td>
+            </tr>
+            <tr>
+              <td>Railway Pro + usage</td>
+              <td>Backend + DB + frontend</td>
+              <td class="num">165</td>
+            </tr>
+            <tr>
+              <td>Google Workspace</td>
+              <td>Pro email</td>
+              <td class="num">33</td>
+            </tr>
+            <tr>
+              <td>Domain</td>
+              <td>amortized</td>
+              <td class="num">6</td>
+            </tr>
+            <tr>
+              <td>GitHub / Vercel / Sentry</td>
+              <td>free tiers</td>
+              <td class="num">0</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Lean total</strong></td>
+              <td class="num"><strong>~RM675/mo</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="sub" style="margin: 0.5rem 0 0">
+          Yearly ≈ <strong>RM8,100</strong>. One-time: SSM registration RM30–60.
+          Stripe fees 3.4%+RM1 per payment (comes out of revenue, not fixed).
+        </p>
+      </div>
+      <div class="card">
+        <strong>Scaled / comfortable tier</strong> — swap in only when a client
+        forces it:
+        <table>
+          <tbody>
+            <tr>
+              <td>Claude Max 20x (vs 5x)</td>
+              <td>hit usage limits</td>
+              <td class="num">940</td>
+            </tr>
+            <tr>
+              <td>Railway heavy usage</td>
+              <td>more client apps</td>
+              <td class="num">230–470</td>
+            </tr>
+            <tr>
+              <td>Vercel Pro + GitHub Team</td>
+              <td>scale infra</td>
+              <td class="num">113</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Comfortable total</strong></td>
+              <td class="num"><strong>~RM1,300–1,500/mo</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ───────────── MODELS ───────────── -->
+      <h2>2. Business models &amp; time-to-profit</h2>
+      <p class="sub">
+        Break-even is ~RM675/mo. Every model clears it with a single client —
+        the difference is <em>scalability</em>, not whether you profit.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="pill p-bad">AVOID</span>
+          <h3 style="margin: 0.5rem 0">A · Hourly billing</h3>
+          <p>Charge per hour worked.</p>
+          <p>Profit: <span class="bad">never scales</span></p>
+          <ul>
+            <li class="bad">
+              AI collapses your hours → you earn less for being fast
+            </li>
+            <li>Income capped by hours in a day</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="pill p-warn">OK START</span>
+          <h3 style="margin: 0.5rem 0">B · Project / fixed-price</h3>
+          <p>Scoped packages, RM2.5k–25k each.</p>
+          <p>Profit: <span class="good">week 1 of client #1</span></p>
+          <ul>
+            <li class="good">One RM2,500 site covers ~4 months of cost</li>
+            <li class="warn">
+              Feast-or-famine — restart pipeline each project
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="pill p-good">THE GOAL</span>
+          <h3 style="margin: 0.5rem 0">C · Retainers (recurring)</h3>
+          <p>Care/growth plans RM300–2,500/mo.</p>
+          <p>Profit: <span class="good">compounds, ~85% margin</span></p>
+          <ul>
+            <li class="good">Flat costs + recurring revenue = scalable</li>
+            <li class="good">5 retainers ≈ RM5k/mo, covers cost 7×</li>
+            <li>Slower to build — needs delivered projects first</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="pill p-good">BEST BLEND</span>
+          <h3 style="margin: 0.5rem 0">D · Productized + retainer</h3>
+          <p>B funds now, C makes it a business.</p>
+          <p>Profit: <span class="good">month 1; stable by ~month 4–6</span></p>
+          <ul>
+            <li class="good">Projects pay bills, retainers stack underneath</li>
+            <li class="good">Recommended model</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>3. Trade-offs at a glance</h2>
+      <div class="card">
+        <table class="tradeoff">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Time to profit</th>
+              <th>Scalable?</th>
+              <th>Risk</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A Hourly</td>
+              <td>fast</td>
+              <td class="bad">No — time-capped</td>
+              <td>Punishes your speed</td>
+            </tr>
+            <tr>
+              <td>B Project</td>
+              <td><span class="good">Week 1</span></td>
+              <td class="warn">Partly</td>
+              <td>Pipeline restarts each job</td>
+            </tr>
+            <tr>
+              <td>C Retainer</td>
+              <td>Month 2–3</td>
+              <td class="good">Yes</td>
+              <td>Needs proof/portfolio first</td>
+            </tr>
+            <tr>
+              <td>D Blend</td>
+              <td><span class="good">Month 1 → stable 4–6</span></td>
+              <td class="good">Yes</td>
+              <td>Must run both at once</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ───────────── PROFIT TIMELINE ───────────── -->
+      <h2>4. Realistic timeline to stable profit</h2>
+      <div class="card">
+        <table>
+          <tbody>
+            <tr>
+              <td>Month 1</td>
+              <td>Close 1 project (RM2,500)</td>
+              <td class="num good">+RM1,825</td>
+            </tr>
+            <tr>
+              <td>Month 2–3</td>
+              <td>2–3 projects, convert 1–2 to retainers</td>
+              <td class="num good">profitable</td>
+            </tr>
+            <tr>
+              <td>Month 4–6</td>
+              <td>~5 retainers (RM5k/mo) + project work</td>
+              <td class="num good">~85% margin, self-sustaining</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="sub" style="margin: 0.5rem 0 0">
+          The maths says profit in week 1.
+          <strong
+            >Stable, doesn't-depend-on-the-next-sale profit ≈ month 4–6.</strong
+          >
+        </p>
+      </div>
+
+      <!-- ───────────── BLOCKER ───────────── -->
+      <h2>5. Your biggest blocker right now</h2>
+      <div class="card blocker">
+        <p class="big warn">
+          It's not cost. It's not tech. It's pipeline — getting clients.
+        </p>
+        <p>
+          Your costs are trivial (RM675) and Claude handles delivery. You are
+          <strong
+            >not constrained by money or capacity — you're constrained by
+            demand.</strong
+          >
+          One signed client makes you profitable; the whole game is finding
+          them.
+        </p>
+        <strong>To accelerate, ignore everything except this:</strong>
+        <ul>
+          <li>
+            <strong>1 portfolio proof</strong> — ship one real site (even a
+            free/cheap first client) to show, not tell.
+          </li>
+          <li>
+            <strong>A pricing sheet</strong> — so quoting takes minutes, not
+            days.
+          </li>
+          <li>
+            <strong>3–5 outreach attempts/week</strong> — local SMEs, niche down
+            (e.g. "websites for KL dental clinics").
+          </li>
+          <li>
+            <strong>Convert every project → retainer</strong> on delivery.
+            That's the scalable engine.
+          </li>
+        </ul>
+        <p class="sub" style="margin: 0.5rem 0 0">
+          Don't pre-buy Max 20x, Vercel Pro, or accounting software. Don't
+          over-build infra. Spend energy on sales, not setup.
+        </p>
+      </div>
+
+      <p class="foot">
+        Estimates from general 2026 pricing, not live-fetched. Adjust the RM4.70
+        rate and rates to your market. The shortest path to profit is one signed
+        client — go get the first one.
+      </p>
+    </main>
+  </body>
+</html>
